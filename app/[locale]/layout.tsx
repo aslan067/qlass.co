@@ -6,10 +6,61 @@ import '../globals.css'
 
 const locales = ['tr', 'en', 'de']
 
-export const metadata: Metadata = {
-  title: 'Qlass ERP – İşletmenizi Yönetmenin Qlass Yolu',
-  description: 'KOBİler için modern ERP yazılımı. Finans, satış, tedarik zinciri ve daha fazlası tek platformda.',
+const metadataByLocale: Record<string, { title: string; description: string }> = {
+  tr: {
+    title: 'Qlass ERP – İşletmenizi Yönetmenin Qlass Yolu',
+    description:
+      'KOBİler için modern ERP yazılımı. Finans, satış, tedarik zinciri ve daha fazlası tek platformda.'
+  },
+  en: {
+    title: 'Qlass ERP – The Smarter Way to Manage Your Business',
+    description:
+      'Modern ERP software for SMEs. Manage finance, sales, procurement, and supply chain in one platform.'
+  },
+  de: {
+    title: 'Qlass ERP – Der Smarte Weg, Ihr Unternehmen zu Steuern',
+    description:
+      'Moderne ERP-Software für KMU. Finanzen, Vertrieb, Beschaffung und Lieferkette auf einer Plattform.'
+  }
 }
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://qlass.co'
+
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+  if (!locales.includes(locale)) notFound()
+
+  const localized = metadataByLocale[locale]
+  const canonical = `/${locale}`
+
+  return {
+    metadataBase: new URL(siteUrl),
+    title: localized.title,
+    description: localized.description,
+    alternates: {
+      canonical,
+      languages: {
+        tr: '/tr',
+        en: '/en',
+        de: '/de',
+        'x-default': '/tr'
+      }
+    },
+    openGraph: {
+      title: localized.title,
+      description: localized.description,
+      url: canonical,
+      siteName: 'Qlass ERP',
+      locale,
+      type: 'website'
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: localized.title,
+      description: localized.description
+    }
+  }
+}
+
 
 export default async function LocaleLayout({
   children,

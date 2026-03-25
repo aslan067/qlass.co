@@ -17,7 +17,20 @@
     "ctaSecondary": "Daha Fazla Bilgi",
     "stat1": "Mutlu Müşteri",
     "stat2": "Ülke",
-    "stat3": "Yıl Deneyim"
+    "stat3": "Yıl Deneyim",
+    "dashboard": {
+      "revenue": "Toplam Gelir",
+      "activeOrders": "Aktif Siparişler",
+      "suppliers": "Tedarikçiler",
+      "inventoryValue": "Stok Değeri",
+      "thisMonth": "bu ay",
+      "revenueChart": "Gelir Grafiği",
+      "last12Months": "Son 12 ay",
+      "modules": "Modüller",
+      "finance": "Finans",
+      "sales": "Satış",
+      "procurement": "Tedarik"
+    }
   },
   "features": {
     "badge": "Sunduğumuz Hizmetler",
