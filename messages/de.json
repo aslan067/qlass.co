@@ -17,7 +17,20 @@
     "ctaSecondary": "Mehr erfahren",
     "stat1": "Zufriedene Kunden",
     "stat2": "Länder",
-    "stat3": "Jahre Erfahrung"
+    "stat3": "Jahre Erfahrung",
+    "dashboard": {
+      "revenue": "Gesamtumsatz",
+      "activeOrders": "Aktive Bestellungen",
+      "suppliers": "Lieferanten",
+      "inventoryValue": "Lagerwert",
+      "thisMonth": "diesen Monat",
+      "revenueChart": "Umsatzdiagramm",
+      "last12Months": "Letzte 12 Monate",
+      "modules": "Module",
+      "finance": "Finanzen",
+      "sales": "Vertrieb",
+      "procurement": "Beschaffung"
+    }
   },
   "features": {
     "badge": "Unsere Leistungen",
