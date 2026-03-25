@@ -1,7 +1,7 @@
 'use client'
 import { useTranslations } from 'next-intl'
 import { ArrowRight, Play, TrendingUp, Users, Globe2 } from 'lucide-react'
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 
 export default function Hero() {
   const t = useTranslations('hero')
@@ -90,15 +90,15 @@ export default function Hero() {
               {/* Top stats row */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                 {[
-                  { label: 'Toplam Gelir', value: '₺2.4M', change: '+12%', color: 'text-emerald-400' },
-                  { label: 'Aktif Siparişler', value: '847', change: '+5%', color: 'text-brand-400' },
-                  { label: 'Tedarikçiler', value: '124', change: '+2%', color: 'text-amber-400' },
-                  { label: 'Stok Değeri', value: '₺890K', change: '-3%', color: 'text-rose-400' },
+                  { label: t('dashboard.revenue'), value: '₺2.4M', change: '+12%', color: 'text-emerald-400' },
+                  { label: t('dashboard.activeOrders'), value: '847', change: '+5%', color: 'text-brand-400' },
+                  { label: t('dashboard.suppliers'), value: '124', change: '+2%', color: 'text-amber-400' },
+                  { label: t('dashboard.inventoryValue'), value: '₺890K', change: '-3%', color: 'text-rose-400' },
                 ].map((item, i) => (
                   <div key={i} className="bg-dark-700 rounded-xl p-4">
                     <div className="text-slate-500 text-xs mb-2">{item.label}</div>
                     <div className={`font-display font-bold text-lg ${item.color}`}>{item.value}</div>
-                    <div className="text-slate-600 text-xs mt-1">{item.change} bu ay</div>
+                    <div className="text-slate-600 text-xs mt-1">{item.change} {t('dashboard.thisMonth')}</div>
                   </div>
                 ))}
               </div>
@@ -107,8 +107,8 @@ export default function Hero() {
               <div className="grid grid-cols-3 gap-4">
                 <div className="col-span-2 bg-dark-700 rounded-xl p-4">
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-white text-sm font-medium">Gelir Grafiği</span>
-                    <span className="text-brand-400 text-xs">Son 12 ay</span>
+                    <span className="text-white text-sm font-medium">{t('dashboard.revenueChart')}</span>
+                    <span className="text-brand-400 text-xs">{t('dashboard.last12Months')}</span>
                   </div>
                   {/* Fake chart bars */}
                   <div className="flex items-end gap-1.5 h-24">
@@ -125,11 +125,11 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="bg-dark-700 rounded-xl p-4">
-                  <div className="text-white text-sm font-medium mb-3">Modüller</div>
+                  <div className="text-white text-sm font-medium mb-3">{t('dashboard.modules')}</div>
                   {[
-                    { name: 'Finans', pct: 92, color: '#818cf8' },
-                    { name: 'Satış', pct: 78, color: '#34d399' },
-                    { name: 'Tedarik', pct: 65, color: '#f59e0b' },
+                    { name: t('dashboard.finance'), pct: 92, color: '#818cf8' },
+                    { name: t('dashboard.sales'), pct: 78, color: '#34d399' },
+                    { name: t('dashboard.procurement'), pct: 65, color: '#f59e0b' },
                   ].map((m, i) => (
                     <div key={i} className="mb-3">
                       <div className="flex justify-between text-xs text-slate-400 mb-1">

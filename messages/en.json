@@ -17,7 +17,20 @@
     "ctaSecondary": "Learn More",
     "stat1": "Happy Customers",
     "stat2": "Countries",
-    "stat3": "Years Experience"
+    "stat3": "Years Experience",
+    "dashboard": {
+      "revenue": "Total Revenue",
+      "activeOrders": "Active Orders",
+      "suppliers": "Suppliers",
+      "inventoryValue": "Inventory Value",
+      "thisMonth": "this month",
+      "revenueChart": "Revenue Chart",
+      "last12Months": "Last 12 months",
+      "modules": "Modules",
+      "finance": "Finance",
+      "sales": "Sales",
+      "procurement": "Procurement"
+    }
   },
   "features": {
     "badge": "Our Services",
