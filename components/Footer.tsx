@@ -7,7 +7,7 @@ export default function Footer({ locale }: { locale: string }) {
   const t = useTranslations('footer')
 
   return (
-    <footer className="relative border-t border-white/5 pt-16 pb-8">
+    <footer className="relative border-t border-slate-200 pt-16 pb-8 bg-white">
       <div className="absolute inset-0 grid-bg opacity-20" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
@@ -18,9 +18,9 @@ export default function Footer({ locale }: { locale: string }) {
               <div className="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center">
                 <span className="font-display font-bold text-white text-sm">Q</span>
               </div>
-              <span className="font-display font-bold text-xl text-white">qlass</span>
+              <span className="font-display font-bold text-xl text-slate-900">qlass</span>
             </div>
-            <p className="text-slate-500 text-sm leading-relaxed max-w-sm mb-6">
+            <p className="text-slate-400 text-sm leading-relaxed max-w-sm mb-6">
               {t('desc')}
             </p>
             <div className="flex gap-3">
@@ -30,7 +30,7 @@ export default function Footer({ locale }: { locale: string }) {
                 { icon: Twitter, href: 'https://twitter.com' },
               ].map(({ icon: Icon, href }, i) => (
                 <a key={i} href={href} target="_blank"
-                  className="w-9 h-9 rounded-lg border border-white/10 flex items-center justify-center text-slate-500 hover:text-white hover:border-brand-500/40 transition-all hover:bg-brand-600/10">
+                  className="w-9 h-9 rounded-lg border border-slate-200 flex items-center justify-center text-slate-400 hover:text-brand-600 hover:border-brand-300 transition-all hover:bg-brand-50">
                   <Icon size={16} />
                 </a>
               ))}
@@ -39,11 +39,11 @@ export default function Footer({ locale }: { locale: string }) {
 
           {/* Product */}
           <div>
-            <h4 className="font-display font-semibold text-white text-sm mb-4">{t('product')}</h4>
+            <h4 className="font-display font-semibold text-slate-900 text-sm mb-4">{t('product')}</h4>
             <ul className="flex flex-col gap-3">
               {(['features', 'integrations', 'pricing', 'changelog'] as const).map(k => (
                 <li key={k}>
-                  <a href="#" className="text-slate-500 hover:text-slate-300 text-sm transition-colors">
+                  <a href="#" className="text-slate-400 hover:text-slate-600 text-sm transition-colors">
                     {t(`links.${k}`)}
                   </a>
                 </li>
@@ -53,11 +53,11 @@ export default function Footer({ locale }: { locale: string }) {
 
           {/* Company */}
           <div>
-            <h4 className="font-display font-semibold text-white text-sm mb-4">{t('company')}</h4>
+            <h4 className="font-display font-semibold text-slate-900 text-sm mb-4">{t('company')}</h4>
             <ul className="flex flex-col gap-3">
               {(['about', 'careers', 'blog', 'contact'] as const).map(k => (
                 <li key={k}>
-                  <a href={k === 'contact' ? '#contact' : '#'} className="text-slate-500 hover:text-slate-300 text-sm transition-colors">
+                  <a href={k === 'contact' ? '#contact' : '#'} className="text-slate-400 hover:text-slate-600 text-sm transition-colors">
                     {t(`links.${k}`)}
                   </a>
                 </li>
@@ -67,8 +67,8 @@ export default function Footer({ locale }: { locale: string }) {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-slate-600 text-sm">{t('copyright')}</p>
+        <div className="border-t border-slate-200 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-slate-400 text-sm">{t('copyright')}</p>
 
           {/* Language switcher */}
           <div className="flex items-center gap-1">
@@ -80,8 +80,8 @@ export default function Footer({ locale }: { locale: string }) {
               <Link key={l.code} href={`/${l.code}`}
                 className={`px-3 py-1.5 rounded-lg text-sm transition-all ${
                   l.code === locale
-                    ? 'bg-brand-600/20 text-brand-400 font-medium'
-                    : 'text-slate-600 hover:text-slate-400 hover:bg-white/5'
+                    ? 'bg-brand-50 text-brand-600 font-medium'
+                    : 'text-slate-400 hover:text-slate-600 hover:bg-slate-50'
                 }`}>
                 {l.flag} {l.code.toUpperCase()}
               </Link>
