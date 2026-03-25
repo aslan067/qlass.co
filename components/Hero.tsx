@@ -1,7 +1,6 @@
 'use client'
 import { useTranslations } from 'next-intl'
 import { ArrowRight, Play, TrendingUp, Users, Globe2 } from 'lucide-react'
-import { useEffect, useRef } from 'react'
 
 export default function Hero() {
   const t = useTranslations('hero')
