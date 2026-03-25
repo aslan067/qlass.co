@@ -1,0 +1,90 @@
+'use client'
+import { useTranslations } from 'next-intl'
+import { ArrowRight } from 'lucide-react'
+
+const integrations = [
+  { name: 'SAP', letter: 'S', color: '#0070F3', bg: 'rgba(0,112,243,0.1)' },
+  { name: 'Microsoft', letter: 'M', color: '#00A4EF', bg: 'rgba(0,164,239,0.1)' },
+  { name: 'Oracle', letter: 'O', color: '#F80000', bg: 'rgba(248,0,0,0.1)' },
+  { name: 'Salesforce', letter: 'SF', color: '#00A1E0', bg: 'rgba(0,161,224,0.1)' },
+  { name: 'Slack', letter: 'Sl', color: '#4A154B', bg: 'rgba(74,21,75,0.15)' },
+  { name: 'Shopify', letter: 'Sh', color: '#96BF48', bg: 'rgba(150,191,72,0.1)' },
+  { name: 'Stripe', letter: 'St', color: '#6772E5', bg: 'rgba(103,114,229,0.1)' },
+  { name: 'HubSpot', letter: 'H', color: '#FF7A59', bg: 'rgba(255,122,89,0.1)' },
+  { name: 'Jira', letter: 'J', color: '#0052CC', bg: 'rgba(0,82,204,0.1)' },
+  { name: 'Zoom', letter: 'Z', color: '#2D8CFF', bg: 'rgba(45,140,255,0.1)' },
+  { name: 'AWS', letter: 'A', color: '#FF9900', bg: 'rgba(255,153,0,0.1)' },
+  { name: 'Google', letter: 'G', color: '#4285F4', bg: 'rgba(66,133,244,0.1)' },
+]
+
+export default function Integrations() {
+  const t = useTranslations('integrations')
+
+  return (
+    <section id="integrations" className="relative py-32 overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-500/30 to-transparent" />
+
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/3 right-0 w-80 h-80 rounded-full bg-brand-600/8 blur-[100px]" />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-500/30 bg-brand-600/10 text-brand-300 text-sm font-medium mb-6">
+            {t('badge')}
+          </div>
+          <h2 className="font-display font-bold text-4xl md:text-5xl text-white mb-5 leading-tight">
+            {t('title')}
+          </h2>
+          <p className="text-slate-400 text-lg max-w-xl mx-auto">
+            {t('subtitle')}
+          </p>
+        </div>
+
+        {/* Integration grid */}
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 mb-12">
+          {integrations.map((intg, i) => (
+            <div key={i}
+              className="glass-card rounded-xl p-4 flex flex-col items-center justify-center gap-2 group cursor-default aspect-square">
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center font-display font-bold text-sm transition-transform group-hover:scale-110"
+                style={{ background: intg.bg, color: intg.color }}>
+                {intg.letter}
+              </div>
+              <span className="text-slate-500 text-xs group-hover:text-slate-400 transition-colors">{intg.name}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className="text-center">
+          <button className="inline-flex items-center gap-2 text-brand-400 hover:text-brand-300 text-sm font-medium transition-colors group">
+            {t('cta')}
+            <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" />
+          </button>
+        </div>
+
+        {/* Marquee strip */}
+        <div className="mt-16 relative overflow-hidden">
+          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-dark-900 to-transparent z-10" />
+          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-dark-900 to-transparent z-10" />
+          <div className="flex gap-6 animate-[marquee_25s_linear_infinite]">
+            {[...integrations, ...integrations].map((intg, i) => (
+              <div key={i} className="flex items-center gap-2 whitespace-nowrap px-4 py-2 glass-card rounded-full text-sm text-slate-500 shrink-0">
+                <span className="font-bold" style={{ color: intg.color }}>{intg.letter}</span>
+                <span>{intg.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <style>{`
+        @keyframes marquee {
+          from { transform: translateX(0); }
+          to { transform: translateX(-50%); }
+        }
+      `}</style>
+    </section>
+  )
+}

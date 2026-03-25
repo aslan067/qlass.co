@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "integrations": "Integrations",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "login": "Login",
+    "demo": "Request Demo"
+  },
+  "hero": {
+    "badge": "20+ Years of Experience",
+    "title": "Manage Your Business",
+    "titleAccent": "The Qlass Way",
+    "subtitle": "A modern, user-friendly ERP solution designed for SMEs. Manage finance, sales, supply chain and more on a single platform.",
+    "cta": "Free Demo",
+    "ctaSecondary": "Learn More",
+    "stat1": "Happy Customers",
+    "stat2": "Countries",
+    "stat3": "Years Experience"
+  },
+  "features": {
+    "badge": "Our Services",
+    "title": "We Turn Information Into Actionable Insights",
+    "subtitle": "Comprehensive ERP modules that optimize your business processes, increase efficiency, and provide competitive advantage.",
+    "items": {
+      "finance": {
+        "title": "Finance",
+        "desc": "Simplify accounting and financial close processes, optimize treasury and financial risk management."
+      },
+      "sales": {
+        "title": "Sales",
+        "desc": "Maximize revenue with order and contract management, drive sales performance and support your team."
+      },
+      "procurement": {
+        "title": "Sourcing & Procurement",
+        "desc": "Streamline operational purchasing, automate sourcing and contract management, centralize procurement."
+      },
+      "supplyChain": {
+        "title": "Supply Chain",
+        "desc": "Provide accurate commitment dates, integrate transportation management, streamline warehouse operations."
+      },
+      "service": {
+        "title": "Service Management",
+        "desc": "Deliver exceptional, personalized service with holistic analytics and integrated service management."
+      },
+      "assets": {
+        "title": "Asset Management",
+        "desc": "Achieve operational excellence by planning, scheduling, and executing asset maintenance with integrated processes."
+      }
+    }
+  },
+  "howItWorks": {
+    "badge": "Our Process",
+    "title": "The Future Is Brighter When You're Strategically Prepared",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Case Analysis",
+        "desc": "We deeply analyze your current business processes, needs and goals. We identify areas that require improvement and optimization."
+      },
+      {
+        "num": "02",
+        "title": "Strategic Advice",
+        "desc": "Based on analysis findings, we create a customized ERP strategy for you. We determine module selection and integration plan."
+      },
+      {
+        "num": "03",
+        "title": "Implementation & Support",
+        "desc": "We execute the plan, train your team and provide continuous support after go-live to ensure seamless operations."
+      }
+    ]
+  },
+  "integrations": {
+    "badge": "Integrations",
+    "title": "Works Seamlessly With Your Favorite Platforms",
+    "subtitle": "Over 40,000 businesses use Qlass integrated with their existing infrastructure.",
+    "cta": "View All Integrations"
+  },
+  "testimonials": {
+    "badge": "Customer Reviews",
+    "title": "10,000+ Happy Customers",
+    "items": [
+      {
+        "name": "Ahmet Yılmaz",
+        "role": "CEO, TechPro Inc.",
+        "text": "After implementing Qlass ERP, our operational efficiency increased by 40%. Finance and procurement processes are now much more transparent."
+      },
+      {
+        "name": "Sarah Müller",
+        "role": "CFO, EuroTrade GmbH",
+        "text": "The integration was seamless and the support team was always available. Qlass has revolutionized our processes from day one."
+      },
+      {
+        "name": "James Harrison",
+        "role": "Operations Director, GlobalSupply Ltd.",
+        "text": "The best ERP decision we've made. Qlass's supply chain module alone saved us 30% in operational costs within the first year."
+      }
+    ]
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Request a Demo",
+    "subtitle": "Our experts will identify the best solution for you and arrange a free demo session.",
+    "name": "Full Name",
+    "company": "Company Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Your Message",
+    "submit": "Send",
+    "address": "Istanbul, Turkey",
+    "emailLabel": "info@qlass.co",
+    "phoneLabel": "+90 212 000 00 00"
+  },
+  "footer": {
+    "desc": "Qlass has been providing modern ERP solutions to SMEs for over 20 years, making a difference with consulting services that support business partners' success.",
+    "product": "Product",
+    "company": "Company",
+    "links": {
+      "features": "Features",
+      "integrations": "Integrations",
+      "pricing": "Pricing",
+      "changelog": "Changelog",
+      "about": "About Us",
+      "careers": "Careers",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "copyright": "© 2024 Qlass Software. All rights reserved."
+  }
+}

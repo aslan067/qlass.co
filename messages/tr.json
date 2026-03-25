@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "features": "Özellikler",
+    "howItWorks": "Nasıl Çalışır",
+    "integrations": "Entegrasyonlar",
+    "testimonials": "Referanslar",
+    "contact": "İletişim",
+    "login": "Giriş Yap",
+    "demo": "Demo Talep Et"
+  },
+  "hero": {
+    "badge": "20+ Yıllık Deneyim",
+    "title": "İşletmenizi Yönetmenin",
+    "titleAccent": "Qlass Yolu",
+    "subtitle": "KOBİ'ler için tasarlanmış modern, kullanıcı dostu ERP çözümü. Finans, satış, tedarik zinciri ve daha fazlasını tek platformda yönetin.",
+    "cta": "Ücretsiz Demo",
+    "ctaSecondary": "Daha Fazla Bilgi",
+    "stat1": "Mutlu Müşteri",
+    "stat2": "Ülke",
+    "stat3": "Yıl Deneyim"
+  },
+  "features": {
+    "badge": "Sunduğumuz Hizmetler",
+    "title": "Bilgiyi Aksiyona Dönüştürüyoruz",
+    "subtitle": "İş süreçlerinizi optimize eden, verimliliği artıran ve rekabet avantajı sağlayan kapsamlı ERP modülleri.",
+    "items": {
+      "finance": {
+        "title": "Finans",
+        "desc": "Muhasebe ve finansal kapanış süreçlerini basitleştirin, hazine ve finansal risk yönetimini optimize edin."
+      },
+      "sales": {
+        "title": "Satış",
+        "desc": "Sipariş ve sözleşme yönetimiyle geliri maksimize edin, satış performansını artırın."
+      },
+      "procurement": {
+        "title": "Tedarik & Satın Alma",
+        "desc": "Operasyonel satın almayı kolaylaştırın, kaynak ve sözleşme yönetimini otomatize edin."
+      },
+      "supplyChain": {
+        "title": "Tedarik Zinciri",
+        "desc": "Daha doğru teslimat tarihleri sağlayın, taşıma yönetimini entegre edin ve depo yönetimini iyileştirin."
+      },
+      "service": {
+        "title": "Hizmet Yönetimi",
+        "desc": "Bütünsel analitik ve entegre hizmet yönetimiyle olağanüstü, kişiselleştirilmiş hizmet sunun."
+      },
+      "assets": {
+        "title": "Varlık Yönetimi",
+        "desc": "Entegre süreçlerle bakım faaliyetlerini planlayarak operasyonel mükemmelliğe ulaşın."
+      }
+    }
+  },
+  "howItWorks": {
+    "badge": "Sürecimiz",
+    "title": "Stratejik Hazırlık ile Geleceğiniz Daha Parlak",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Durum Analizi",
+        "desc": "Mevcut iş süreçlerinizi, ihtiyaçlarınızı ve hedeflerinizi derinlemesine analiz ediyoruz. Hangi alanlarda iyileştirme gerektiğini tespit ediyoruz."
+      },
+      {
+        "num": "02",
+        "title": "Stratejik Danışmanlık",
+        "desc": "Analizden elde ettiğimiz bulgulara dayanarak size özel ERP stratejisi oluşturuyoruz. Modül seçimi ve entegrasyon planını belirliyoruz."
+      },
+      {
+        "num": "03",
+        "title": "Uygulama & Destek",
+        "desc": "Planı hayata geçiriyor, ekibinizi eğitiyor ve canlı geçiş sonrasında kesintisiz destek sağlıyoruz."
+      }
+    ]
+  },
+  "integrations": {
+    "badge": "Entegrasyonlar",
+    "title": "Favori Platformlarınızla Sorunsuz Çalışır",
+    "subtitle": "40.000'den fazla işletme Qlass'ı mevcut altyapılarıyla entegre kullanıyor.",
+    "cta": "Tüm Entegrasyonları Gör"
+  },
+  "testimonials": {
+    "badge": "Müşteri Görüşleri",
+    "title": "10.000+ Mutlu Müşteri",
+    "items": [
+      {
+        "name": "Ahmet Yılmaz",
+        "role": "Genel Müdür, TechPro A.Ş.",
+        "text": "Qlass ERP'yi kullanmaya başladıktan sonra operasyonel verimliliğimiz %40 arttı. Finans ve tedarik süreçleri artık çok daha şeffaf."
+      },
+      {
+        "name": "Sarah Müller",
+        "role": "CFO, EuroTrade GmbH",
+        "text": "Die Integration war reibungslos und das Support-Team war jederzeit erreichbar. Qlass hat unsere Prozesse revolutioniert."
+      },
+      {
+        "name": "James Harrison",
+        "role": "Operations Director, GlobalSupply Ltd.",
+        "text": "The best ERP decision we've made. Qlass's supply chain module alone saved us 30% in operational costs within the first year."
+      }
+    ]
+  },
+  "contact": {
+    "badge": "İletişim",
+    "title": "Demo Talep Edin",
+    "subtitle": "Uzmanlarımız sizin için en uygun çözümü belirleyecek ve ücretsiz demo ayarlayacak.",
+    "name": "Ad Soyad",
+    "company": "Şirket Adı",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "message": "Mesajınız",
+    "submit": "Gönder",
+    "address": "İstanbul, Türkiye",
+    "emailLabel": "info@qlass.co",
+    "phoneLabel": "+90 212 000 00 00"
+  },
+  "footer": {
+    "desc": "20 yılı aşkın deneyimiyle KOBİ'lere modern ERP çözümleri sunan Qlass, iş ortaklarınızın başarısını destekleyen danışmanlık hizmetiyle fark yaratıyor.",
+    "product": "Ürün",
+    "company": "Şirket",
+    "links": {
+      "features": "Özellikler",
+      "integrations": "Entegrasyonlar",
+      "pricing": "Fiyatlandırma",
+      "changelog": "Değişiklik Günlüğü",
+      "about": "Hakkımızda",
+      "careers": "Kariyer",
+      "blog": "Blog",
+      "contact": "İletişim"
+    },
+    "copyright": "© 2024 Qlass Software. Tüm hakları saklıdır."
+  }
+}

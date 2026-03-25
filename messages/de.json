@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "features": "Funktionen",
+    "howItWorks": "So funktioniert es",
+    "integrations": "Integrationen",
+    "testimonials": "Referenzen",
+    "contact": "Kontakt",
+    "login": "Anmelden",
+    "demo": "Demo anfragen"
+  },
+  "hero": {
+    "badge": "20+ Jahre Erfahrung",
+    "title": "Verwalten Sie Ihr Unternehmen",
+    "titleAccent": "auf Qlass-Art",
+    "subtitle": "Eine moderne, benutzerfreundliche ERP-Lösung für KMU. Verwalten Sie Finanzen, Vertrieb, Lieferkette und mehr auf einer Plattform.",
+    "cta": "Kostenlose Demo",
+    "ctaSecondary": "Mehr erfahren",
+    "stat1": "Zufriedene Kunden",
+    "stat2": "Länder",
+    "stat3": "Jahre Erfahrung"
+  },
+  "features": {
+    "badge": "Unsere Leistungen",
+    "title": "Wir Verwandeln Informationen in Umsetzbare Erkenntnisse",
+    "subtitle": "Umfassende ERP-Module, die Ihre Geschäftsprozesse optimieren, die Effizienz steigern und Wettbewerbsvorteile bieten.",
+    "items": {
+      "finance": {
+        "title": "Finanzen",
+        "desc": "Vereinfachen Sie Buchhaltung und Finanzabschlüsse, optimieren Sie Treasury und Finanzrisikomanagement."
+      },
+      "sales": {
+        "title": "Vertrieb",
+        "desc": "Maximieren Sie den Umsatz mit Auftrags- und Vertragsmanagement, steigern Sie die Vertriebsleistung."
+      },
+      "procurement": {
+        "title": "Beschaffung & Einkauf",
+        "desc": "Optimieren Sie den operativen Einkauf, automatisieren Sie Beschaffung und Vertragsmanagement."
+      },
+      "supplyChain": {
+        "title": "Lieferkette",
+        "desc": "Genaue Lieferzusagen, integriertes Transportmanagement und optimiertes Lagermanagement."
+      },
+      "service": {
+        "title": "Servicemanagement",
+        "desc": "Außergewöhnlichen, personalisierten Service mit ganzheitlicher Analytik und integriertem Servicemanagement bieten."
+      },
+      "assets": {
+        "title": "Anlagenmanagement",
+        "desc": "Operative Exzellenz durch Planung, Terminierung und Durchführung von Wartungsarbeiten mit integrierten Prozessen."
+      }
+    }
+  },
+  "howItWorks": {
+    "badge": "Unser Prozess",
+    "title": "Die Zukunft ist Heller, Wenn Sie Strategisch Vorbereitet Sind",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Fallanalyse",
+        "desc": "Wir analysieren Ihre aktuellen Geschäftsprozesse, Bedürfnisse und Ziele eingehend. Wir identifizieren Verbesserungspotenziale."
+      },
+      {
+        "num": "02",
+        "title": "Strategische Beratung",
+        "desc": "Basierend auf der Analyse erstellen wir eine maßgeschneiderte ERP-Strategie. Wir bestimmen Modulauswahl und Integrationsplan."
+      },
+      {
+        "num": "03",
+        "title": "Umsetzung & Support",
+        "desc": "Wir setzen den Plan um, schulen Ihr Team und bieten kontinuierlichen Support nach dem Go-Live."
+      }
+    ]
+  },
+  "integrations": {
+    "badge": "Integrationen",
+    "title": "Funktioniert Nahtlos mit Ihren Lieblingsplattformen",
+    "subtitle": "Über 40.000 Unternehmen nutzen Qlass integriert in ihre bestehende Infrastruktur.",
+    "cta": "Alle Integrationen ansehen"
+  },
+  "testimonials": {
+    "badge": "Kundenmeinungen",
+    "title": "10.000+ Zufriedene Kunden",
+    "items": [
+      {
+        "name": "Ahmet Yılmaz",
+        "role": "Geschäftsführer, TechPro AG",
+        "text": "Nach der Implementierung von Qlass ERP stieg unsere Betriebseffizienz um 40%. Finanz- und Beschaffungsprozesse sind jetzt viel transparenter."
+      },
+      {
+        "name": "Sarah Müller",
+        "role": "CFO, EuroTrade GmbH",
+        "text": "Die Integration verlief reibungslos und das Support-Team war jederzeit erreichbar. Qlass hat unsere Prozesse revolutioniert."
+      },
+      {
+        "name": "James Harrison",
+        "role": "Betriebsleiter, GlobalSupply Ltd.",
+        "text": "Die beste ERP-Entscheidung, die wir je getroffen haben. Allein das Supply-Chain-Modul sparte uns im ersten Jahr 30% der Betriebskosten."
+      }
+    ]
+  },
+  "contact": {
+    "badge": "Kontakt",
+    "title": "Demo Anfragen",
+    "subtitle": "Unsere Experten ermitteln die beste Lösung für Sie und arrangieren eine kostenlose Demo-Sitzung.",
+    "name": "Vollständiger Name",
+    "company": "Firmenname",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "message": "Ihre Nachricht",
+    "submit": "Senden",
+    "address": "Istanbul, Türkei",
+    "emailLabel": "info@qlass.co",
+    "phoneLabel": "+90 212 000 00 00"
+  },
+  "footer": {
+    "desc": "Qlass bietet seit über 20 Jahren moderne ERP-Lösungen für KMU und macht mit Beratungsdienstleistungen einen Unterschied, die den Erfolg der Geschäftspartner unterstützen.",
+    "product": "Produkt",
+    "company": "Unternehmen",
+    "links": {
+      "features": "Funktionen",
+      "integrations": "Integrationen",
+      "pricing": "Preise",
+      "changelog": "Änderungsprotokoll",
+      "about": "Über uns",
+      "careers": "Karriere",
+      "blog": "Blog",
+      "contact": "Kontakt"
+    },
+    "copyright": "© 2024 Qlass Software. Alle Rechte vorbehalten."
+  }
+}
