@@ -46,12 +46,12 @@ export default function Integrations() {
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 mb-12">
           {integrations.map((intg, i) => (
             <div key={i}
-              className="glass-card rounded-xl p-4 flex flex-col items-center justify-center gap-2 group cursor-default aspect-square">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center font-display font-bold text-sm transition-transform group-hover:scale-110"
+              className="glass-card rounded-2xl p-5 flex flex-col items-center justify-center gap-3 group cursor-default aspect-square">
+              <div className="w-16 h-16 rounded-2xl flex items-center justify-center font-display font-bold text-xl transition-transform group-hover:scale-110"
                 style={{ background: intg.bg, color: intg.color }}>
                 {intg.letter}
               </div>
-              <span className="text-slate-400 text-xs group-hover:text-slate-600 transition-colors">{intg.name}</span>
+              <span className="text-slate-500 text-xs font-medium group-hover:text-slate-700 transition-colors text-center leading-tight">{intg.name}</span>
             </div>
           ))}
         </div>
@@ -68,11 +68,14 @@ export default function Integrations() {
         <div className="mt-16 relative overflow-hidden">
           <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-slate-50 to-transparent z-10" />
           <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-slate-50 to-transparent z-10" />
-          <div className="flex gap-6 animate-[marquee_25s_linear_infinite]">
+          <div className="flex gap-4 animate-[marquee_25s_linear_infinite]">
             {[...integrations, ...integrations].map((intg, i) => (
-              <div key={i} className="flex items-center gap-2 whitespace-nowrap px-4 py-2 glass-card rounded-full text-sm text-slate-500 shrink-0">
-                <span className="font-bold" style={{ color: intg.color }}>{intg.letter}</span>
-                <span>{intg.name}</span>
+              <div key={i} className="flex items-center gap-2.5 whitespace-nowrap px-4 py-2.5 glass-card rounded-full text-sm text-slate-600 shrink-0">
+                <span className="w-6 h-6 rounded-lg flex items-center justify-center font-display font-bold text-xs shrink-0"
+                  style={{ background: intg.bg, color: intg.color }}>
+                  {intg.letter}
+                </span>
+                <span className="font-medium">{intg.name}</span>
               </div>
             ))}
           </div>
