@@ -1,5 +1,4 @@
-'use client'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import { ArrowRight } from 'lucide-react'
 
 const integrations = [
@@ -17,14 +16,14 @@ const integrations = [
   { name: 'Google', letter: 'G', color: '#4285F4', bg: 'rgba(66,133,244,0.08)' },
 ]
 
-export default function Integrations() {
-  const t = useTranslations('integrations')
+export default async function Integrations() {
+  const t = await getTranslations('integrations')
 
   return (
     <section id="integrations" className="relative py-32 overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent" />
 
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="hidden md:block absolute inset-0 pointer-events-none">
         <div className="absolute top-1/3 right-0 w-80 h-80 rounded-full bg-brand-100/40 blur-[100px]" />
       </div>
 
@@ -82,12 +81,6 @@ export default function Integrations() {
         </div>
       </div>
 
-      <style>{`
-        @keyframes marquee {
-          from { transform: translateX(0); }
-          to { transform: translateX(-50%); }
-        }
-      `}</style>
     </section>
   )
 }

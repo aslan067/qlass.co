@@ -14,7 +14,7 @@
   --text-muted: #64748b;
 }
 
-* {
+html {
   scroll-behavior: smooth;
 }
 
@@ -64,15 +64,20 @@ body {
 .glass-card {
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid var(--border);
-  backdrop-filter: blur(12px);
   transition: all 0.3s ease;
 }
 
-.glass-card:hover {
-  border-color: var(--border-hover);
-  background: rgba(255, 255, 255, 0.95);
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.08);
+@media (min-width: 768px) {
+  .glass-card {
+    backdrop-filter: blur(12px);
+  }
+
+  .glass-card:hover {
+    border-color: var(--border-hover);
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.08);
+  }
 }
 
 /* Noise texture overlay */
@@ -115,6 +120,11 @@ body {
 @keyframes spin-slow {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 .animate-float { animation: float 6s ease-in-out infinite; }

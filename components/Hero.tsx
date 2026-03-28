@@ -7,8 +7,8 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden grid-bg pt-24 pb-16">
-      {/* Ambient glow blobs */}
-      <div className="absolute inset-0 pointer-events-none">
+      {/* Ambient glow blobs — hidden on mobile to avoid expensive GPU paint */}
+      <div className="hidden md:block absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-brand-200/40 blur-[120px]" />
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-brand-100/50 blur-[100px]" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-brand-50/60 blur-[150px]" />
@@ -66,8 +66,8 @@ export default function Hero() {
 
         {/* Dashboard mockup */}
         <div className="relative max-w-5xl mx-auto">
-          {/* Glow behind mockup */}
-          <div className="absolute inset-0 bg-brand-200/30 blur-3xl rounded-3xl scale-110" />
+          {/* Glow behind mockup — hidden on mobile */}
+          <div className="hidden md:block absolute inset-0 bg-brand-200/30 blur-3xl rounded-3xl scale-110" />
 
           <div className="relative glass-card rounded-3xl overflow-hidden border border-brand-200/50 shadow-2xl shadow-brand-200/30">
             {/* Browser bar */}
