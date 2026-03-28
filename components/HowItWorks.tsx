@@ -1,5 +1,4 @@
-'use client'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import { Search, Lightbulb, Rocket } from 'lucide-react'
 
 const stepIcons = [Search, Lightbulb, Rocket]
@@ -15,8 +14,8 @@ const stepBgs = [
   'bg-violet-600',
 ]
 
-export default function HowItWorks() {
-  const t = useTranslations('howItWorks')
+export default async function HowItWorks() {
+  const t = await getTranslations('howItWorks')
   const steps = [0, 1, 2].map(i => ({
     num: t(`steps.${i}.num`),
     title: t(`steps.${i}.title`),
@@ -31,8 +30,8 @@ export default function HowItWorks() {
       <div className="absolute inset-0 grid-bg opacity-50" />
       <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-white/50 to-slate-50" />
 
-      {/* Center glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-brand-100/40 blur-[120px] pointer-events-none" />
+      {/* Center glow — hidden on mobile */}
+      <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-brand-100/40 blur-[120px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}

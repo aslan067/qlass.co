@@ -122,6 +122,11 @@ body {
   to { transform: rotate(360deg); }
 }
 
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
 .animate-float { animation: float 6s ease-in-out infinite; }
 .animate-pulse-ring { animation: pulse-ring 2s ease-out infinite; }
 .animate-spin-slow { animation: spin-slow 20s linear infinite; }

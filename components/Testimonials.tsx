@@ -1,9 +1,8 @@
-'use client'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import { Star, Quote } from 'lucide-react'
 
-export default function Testimonials() {
-  const t = useTranslations('testimonials')
+export default async function Testimonials() {
+  const t = await getTranslations('testimonials')
   const items = [0, 1, 2].map(i => ({
     name: t(`items.${i}.name`),
     role: t(`items.${i}.role`),
@@ -20,7 +19,7 @@ export default function Testimonials() {
     <section id="testimonials" className="relative py-32 overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent" />
 
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="hidden md:block absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-64 rounded-full bg-brand-100/40 blur-[100px]" />
       </div>
 

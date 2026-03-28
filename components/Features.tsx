@@ -1,5 +1,4 @@
-'use client'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import { DollarSign, TrendingUp, ShoppingCart, Truck, Headphones, Settings2 } from 'lucide-react'
 
 const icons = [DollarSign, TrendingUp, ShoppingCart, Truck, Headphones, Settings2]
@@ -21,15 +20,15 @@ const borderColors = [
   'hover:border-violet-300',
 ]
 
-export default function Features() {
-  const t = useTranslations('features')
+export default async function Features() {
+  const t = await getTranslations('features')
   const keys = ['finance', 'sales', 'procurement', 'supplyChain', 'service', 'assets'] as const
 
   return (
     <section id="features" className="relative py-32 overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent" />
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="hidden md:block absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-0 w-64 h-64 rounded-full bg-brand-100/50 blur-[80px]" />
         <div className="absolute top-1/2 right-0 w-64 h-64 rounded-full bg-brand-50/60 blur-[80px]" />
       </div>
