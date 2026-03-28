@@ -1,11 +1,13 @@
+import dynamic from 'next/dynamic'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
-import Features from '@/components/Features'
-import HowItWorks from '@/components/HowItWorks'
-import Integrations from '@/components/Integrations'
-import Testimonials from '@/components/Testimonials'
-import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
+
+const Features = dynamic(() => import('@/components/Features'))
+const HowItWorks = dynamic(() => import('@/components/HowItWorks'))
+const Integrations = dynamic(() => import('@/components/Integrations'))
+const Testimonials = dynamic(() => import('@/components/Testimonials'))
+const Contact = dynamic(() => import('@/components/Contact'))
+const Footer = dynamic(() => import('@/components/Footer'))
 
 export default function Home({ params: { locale } }: { params: { locale: string } }) {
   return (
