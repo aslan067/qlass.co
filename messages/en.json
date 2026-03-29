@@ -121,9 +121,17 @@
     "phone": "Phone",
     "message": "Your Message",
     "submit": "Send",
-    "address": "Istanbul, Turkey",
+    "address": "Frankfurt, Germany",
     "emailLabel": "info@qlass.co",
-    "phoneLabel": "+90 212 000 00 00"
+    "phoneLabel": "+90 212 000 00 00",
+    "namePlaceholder": "John Smith",
+    "companyPlaceholder": "Company Ltd.",
+    "emailPlaceholder": "john@company.com",
+    "phonePlaceholder": "+49 555 000 0000",
+    "messagePlaceholder": "Tell us about your project...",
+    "successTitle": "Message Sent!",
+    "successMessage": "We'll get back to you as soon as possible.",
+    "errorMessage": "Something went wrong. Please try again."
   },
   "footer": {
     "desc": "Qlass has been providing modern ERP solutions to SMEs for over 20 years, making a difference with consulting services that support business partners' success.",

@@ -121,9 +121,17 @@
     "phone": "Telefon",
     "message": "Ihre Nachricht",
     "submit": "Senden",
-    "address": "Istanbul, Türkei",
+    "address": "Frankfurt, Deutschland",
     "emailLabel": "info@qlass.co",
-    "phoneLabel": "+90 212 000 00 00"
+    "phoneLabel": "+90 212 000 00 00",
+    "namePlaceholder": "Max Mustermann",
+    "companyPlaceholder": "Musterfirma GmbH",
+    "emailPlaceholder": "max@musterfirma.de",
+    "phonePlaceholder": "+49 555 000 0000",
+    "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt...",
+    "successTitle": "Nachricht gesendet!",
+    "successMessage": "Wir melden uns so schnell wie möglich bei Ihnen.",
+    "errorMessage": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
   },
   "footer": {
     "desc": "Qlass bietet seit über 20 Jahren moderne ERP-Lösungen für KMU und macht mit Beratungsdienstleistungen einen Unterschied, die den Erfolg der Geschäftspartner unterstützen.",

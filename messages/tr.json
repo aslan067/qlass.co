@@ -121,9 +121,17 @@
     "phone": "Telefon",
     "message": "Mesajınız",
     "submit": "Gönder",
-    "address": "İstanbul, Türkiye",
+    "address": "Frankfurt, Almanya",
     "emailLabel": "info@qlass.co",
-    "phoneLabel": "+90 212 000 00 00"
+    "phoneLabel": "+90 212 000 00 00",
+    "namePlaceholder": "Ahmet Yılmaz",
+    "companyPlaceholder": "Şirket A.Ş.",
+    "emailPlaceholder": "ahmet@sirket.com",
+    "phonePlaceholder": "+90 555 000 00 00",
+    "messagePlaceholder": "Projenizi anlatın...",
+    "successTitle": "Mesajınız İletildi!",
+    "successMessage": "En kısa sürede size dönüş yapacağız.",
+    "errorMessage": "Bir hata oluştu. Lütfen tekrar deneyin."
   },
   "footer": {
     "desc": "20 yılı aşkın deneyimiyle KOBİ'lere modern ERP çözümleri sunan Qlass, iş ortaklarınızın başarısını destekleyen danışmanlık hizmetiyle fark yaratıyor.",
