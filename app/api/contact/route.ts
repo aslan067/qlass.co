@@ -2,6 +2,11 @@ import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
 export async function POST(request: Request) {
+  if (!process.env.RESEND_API_KEY) {
+    console.error('Contact API: RESEND_API_KEY is not set')
+    return NextResponse.json({ error: 'Email service not configured.' }, { status: 500 })
+  }
+
   try {
     const resend = new Resend(process.env.RESEND_API_KEY)
     const body = await request.json()
@@ -11,7 +16,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Name and email are required.' }, { status: 400 })
     }
 
-    const { error } = await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: 'Qlass Contact Form <noreply@qlass.co>',
       to: ['info@qlass.co'],
       replyTo: email,
@@ -27,13 +32,14 @@ export async function POST(request: Request) {
     })
 
     if (error) {
-      console.error('Resend error:', error)
+      console.error('Resend API error:', JSON.stringify(error))
       return NextResponse.json({ error: 'Failed to send email.' }, { status: 500 })
     }
 
+    console.log('Email sent successfully, id:', data?.id)
     return NextResponse.json({ success: true })
   } catch (err) {
-    console.error('Contact API error:', err)
+    console.error('Contact API unexpected error:', err)
     return NextResponse.json({ error: 'Internal server error.' }, { status: 500 })
   }
 }
