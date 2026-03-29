@@ -118,6 +118,13 @@ export default function Contact() {
                     placeholder={t('emailPlaceholder')} />
                 </div>
                 <div>
+                  <label className="text-slate-500 text-xs font-medium block mb-1.5">{t('phone')}</label>
+                  <input type="tel" name="phone"
+                    value={formData.phone} onChange={handleChange}
+                    className="input-glass w-full px-4 py-3 rounded-xl text-sm"
+                    placeholder={t('phonePlaceholder')} />
+                </div>
+                <div>
                   <label className="text-slate-500 text-xs font-medium block mb-1.5">{t('message')}</label>
                   <textarea rows={4} name="message"
                     value={formData.message} onChange={handleChange}
