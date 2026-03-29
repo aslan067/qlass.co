@@ -7,13 +7,39 @@ export default function Contact() {
   const t = useTranslations('contact')
   const [sending, setSending] = useState(false)
   const [sent, setSent] = useState(false)
+  const [error, setError] = useState(false)
+
+  const [formData, setFormData] = useState({
+    name: '',
+    company: '',
+    email: '',
+    phone: '',
+    message: '',
+  })
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setSending(true)
-    await new Promise(r => setTimeout(r, 1200))
-    setSending(false)
-    setSent(true)
+    setError(false)
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
+      if (!res.ok) throw new Error('Failed')
+      setSent(true)
+    } catch {
+      setError(true)
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -64,43 +90,51 @@ export default function Contact() {
                 <div className="w-16 h-16 rounded-full bg-emerald-50 flex items-center justify-center mx-auto mb-4">
                   <Send size={28} className="text-emerald-500" />
                 </div>
-                <h3 className="font-display font-bold text-xl text-slate-900 mb-2">Mesajınız İletildi!</h3>
-                <p className="text-slate-500 text-sm">En kısa sürede size dönüş yapacağız.</p>
+                <h3 className="font-display font-bold text-xl text-slate-900 mb-2">{t('successTitle')}</h3>
+                <p className="text-slate-500 text-sm">{t('successMessage')}</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label className="text-slate-500 text-xs font-medium block mb-1.5">{t('name')}</label>
-                    <input required type="text"
+                    <input required type="text" name="name"
+                      value={formData.name} onChange={handleChange}
                       className="input-glass w-full px-4 py-3 rounded-xl text-sm"
-                      placeholder="Ahmet Yılmaz" />
+                      placeholder={t('namePlaceholder')} />
                   </div>
                   <div>
                     <label className="text-slate-500 text-xs font-medium block mb-1.5">{t('company')}</label>
-                    <input type="text"
+                    <input type="text" name="company"
+                      value={formData.company} onChange={handleChange}
                       className="input-glass w-full px-4 py-3 rounded-xl text-sm"
-                      placeholder="Şirket A.Ş." />
+                      placeholder={t('companyPlaceholder')} />
                   </div>
                 </div>
                 <div>
                   <label className="text-slate-500 text-xs font-medium block mb-1.5">{t('email')}</label>
-                  <input required type="email"
+                  <input required type="email" name="email"
+                    value={formData.email} onChange={handleChange}
                     className="input-glass w-full px-4 py-3 rounded-xl text-sm"
-                    placeholder="ahmet@sirket.com" />
+                    placeholder={t('emailPlaceholder')} />
                 </div>
                 <div>
                   <label className="text-slate-500 text-xs font-medium block mb-1.5">{t('phone')}</label>
-                  <input type="tel"
+                  <input type="tel" name="phone"
+                    value={formData.phone} onChange={handleChange}
                     className="input-glass w-full px-4 py-3 rounded-xl text-sm"
-                    placeholder="+90 555 000 00 00" />
+                    placeholder={t('phonePlaceholder')} />
                 </div>
                 <div>
                   <label className="text-slate-500 text-xs font-medium block mb-1.5">{t('message')}</label>
-                  <textarea rows={4}
+                  <textarea rows={4} name="message"
+                    value={formData.message} onChange={handleChange}
                     className="input-glass w-full px-4 py-3 rounded-xl text-sm resize-none"
-                    placeholder="Projenizi anlatın..." />
+                    placeholder={t('messagePlaceholder')} />
                 </div>
+                {error && (
+                  <p className="text-red-500 text-sm text-center">{t('errorMessage')}</p>
+                )}
                 <button type="submit" disabled={sending}
                   className="flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-500 disabled:opacity-70 text-white font-semibold py-4 rounded-xl transition-all hover:shadow-lg hover:shadow-brand-600/20 hover:-translate-y-0.5 mt-2">
                   {sending ? (
