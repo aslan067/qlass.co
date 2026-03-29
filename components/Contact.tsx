@@ -1,6 +1,6 @@
 'use client'
 import { useTranslations } from 'next-intl'
-import { MapPin, Mail, Phone, Send } from 'lucide-react'
+import { MapPin, Mail, Send } from 'lucide-react'
 import { useState } from 'react'
 
 export default function Contact() {
@@ -71,7 +71,6 @@ export default function Contact() {
               {[
                 { icon: MapPin, label: t('address'), color: 'text-brand-600', bg: 'bg-brand-50' },
                 { icon: Mail, label: t('emailLabel'), color: 'text-emerald-600', bg: 'bg-emerald-50' },
-                { icon: Phone, label: t('phoneLabel'), color: 'text-amber-600', bg: 'bg-amber-50' },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-4">
                   <div className={`w-11 h-11 rounded-xl ${item.bg} flex items-center justify-center shrink-0`}>
