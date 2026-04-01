@@ -4,9 +4,9 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { Menu, X, Globe, ChevronDown } from 'lucide-react'
 
-const localeNames: Record<string, string> = { tr: 'TR', en: 'EN', de: 'DE' }
-const localeFull: Record<string, string> = { tr: 'Türkçe', en: 'English', de: 'Deutsch' }
-const localeFlags: Record<string, string> = { tr: '🇹🇷', en: '🇬🇧', de: '🇩🇪' }
+const localeNames: Record<string, string> = { tr: 'TR', en: 'EN', de: 'DE', fr: 'FR', nl: 'NL' }
+const localeFull: Record<string, string> = { tr: 'Türkçe', en: 'English', de: 'Deutsch', fr: 'Français', nl: 'Nederlands' }
+const localeFlags: Record<string, string> = { tr: '🇹🇷', en: '🇬🇧', de: '🇩🇪', fr: '🇫🇷', nl: '🇳🇱' }
 
 export default function Navbar({ locale }: { locale: string }) {
   const t = useTranslations('nav')
@@ -65,7 +65,7 @@ export default function Navbar({ locale }: { locale: string }) {
             </button>
             {langOpen && (
               <div className="absolute right-0 top-full mt-2 glass-card rounded-xl py-1 w-40 shadow-xl shadow-slate-200/50">
-                {['tr', 'en', 'de'].map(l => (
+                {['tr', 'en', 'de', 'fr', 'nl'].map(l => (
                   <Link key={l} href={`/${l}`} onClick={() => setLangOpen(false)}
                     className={`flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-slate-50 transition-colors ${
                       l === locale ? 'text-brand-600 font-medium' : 'text-slate-500'
@@ -104,7 +104,7 @@ export default function Navbar({ locale }: { locale: string }) {
             </a>
           ))}
           <div className="flex gap-3 pt-4 border-t border-slate-200">
-            {['tr', 'en', 'de'].map(l => (
+            {['tr', 'en', 'de', 'fr', 'nl'].map(l => (
               <Link key={l} href={`/${l}`} onClick={() => setOpen(false)}
                 className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm ${
                   l === locale ? 'bg-brand-50 text-brand-600' : 'text-slate-500 hover:text-slate-900'

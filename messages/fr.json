@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "features": "Fonctionnalités",
+    "howItWorks": "Comment ça marche",
+    "integrations": "Intégrations",
+    "testimonials": "Témoignages",
+    "contact": "Contact",
+    "login": "Connexion",
+    "demo": "Demander une démo"
+  },
+  "hero": {
+    "badge": "20+ ans d'expérience",
+    "title": "Gérez votre entreprise",
+    "titleAccent": "à la façon Qlass",
+    "subtitle": "Une solution ERP moderne et intuitive conçue pour les PME. Gérez la finance, les ventes, la chaîne d'approvisionnement et bien plus sur une seule plateforme.",
+    "cta": "Démo gratuite",
+    "ctaSecondary": "En savoir plus",
+    "stat1": "Clients satisfaits",
+    "stat2": "Pays",
+    "stat3": "Ans d'expérience",
+    "dashboard": {
+      "revenue": "Chiffre d'affaires total",
+      "activeOrders": "Commandes actives",
+      "suppliers": "Fournisseurs",
+      "inventoryValue": "Valeur des stocks",
+      "thisMonth": "ce mois-ci",
+      "revenueChart": "Graphique des revenus",
+      "last12Months": "12 derniers mois",
+      "modules": "Modules",
+      "finance": "Finance",
+      "sales": "Ventes",
+      "procurement": "Achats"
+    }
+  },
+  "features": {
+    "badge": "Nos services",
+    "title": "Nous Transformons l'Information en Insights Actionnables",
+    "subtitle": "Des modules ERP complets qui optimisent vos processus métier, améliorent l'efficacité et vous donnent un avantage concurrentiel.",
+    "items": {
+      "finance": {
+        "title": "Finance",
+        "desc": "Simplifiez la comptabilité et les clôtures financières, optimisez la trésorerie et la gestion des risques financiers."
+      },
+      "sales": {
+        "title": "Ventes",
+        "desc": "Maximisez votre chiffre d'affaires grâce à la gestion des commandes et des contrats, dynamisez la performance commerciale."
+      },
+      "procurement": {
+        "title": "Achats & Approvisionnement",
+        "desc": "Rationalisez les achats opérationnels, automatisez les appels d'offres et la gestion des contrats, centralisez les achats."
+      },
+      "supplyChain": {
+        "title": "Chaîne d'approvisionnement",
+        "desc": "Fournissez des dates d'engagement précises, intégrez la gestion du transport et optimisez les opérations d'entrepôt."
+      },
+      "service": {
+        "title": "Gestion des services",
+        "desc": "Offrez un service exceptionnel et personnalisé grâce à des analyses globales et une gestion intégrée des services."
+      },
+      "assets": {
+        "title": "Gestion des actifs",
+        "desc": "Atteignez l'excellence opérationnelle en planifiant, programmant et exécutant la maintenance des actifs avec des processus intégrés."
+      }
+    }
+  },
+  "howItWorks": {
+    "badge": "Notre processus",
+    "title": "L'Avenir Est Plus Radieux Quand Vous Êtes Stratégiquement Préparé",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Analyse du contexte",
+        "desc": "Nous analysons en profondeur vos processus métier actuels, vos besoins et vos objectifs. Nous identifions les axes d'amélioration et d'optimisation."
+      },
+      {
+        "num": "02",
+        "title": "Conseil stratégique",
+        "desc": "Sur la base de l'analyse, nous élaborons une stratégie ERP sur mesure. Nous déterminons la sélection des modules et le plan d'intégration."
+      },
+      {
+        "num": "03",
+        "title": "Déploiement & Accompagnement",
+        "desc": "Nous mettons en œuvre le plan, formons votre équipe et assurons un support continu après le lancement pour garantir un fonctionnement optimal."
+      }
+    ]
+  },
+  "integrations": {
+    "badge": "Intégrations",
+    "title": "Fonctionne Parfaitement avec Vos Plateformes Préférées",
+    "subtitle": "Plus de 40 000 entreprises utilisent Qlass intégré à leur infrastructure existante.",
+    "cta": "Voir toutes les intégrations"
+  },
+  "testimonials": {
+    "badge": "Avis clients",
+    "title": "10 000+ Clients satisfaits",
+    "items": [
+      {
+        "name": "Ahmet Yılmaz",
+        "role": "PDG, TechPro Inc.",
+        "text": "Après la mise en place de Qlass ERP, notre efficacité opérationnelle a augmenté de 40 %. Les processus financiers et d'approvisionnement sont désormais bien plus transparents."
+      },
+      {
+        "name": "Sarah Müller",
+        "role": "Directrice financière, EuroTrade GmbH",
+        "text": "L'intégration s'est déroulée sans accroc et l'équipe support était toujours disponible. Qlass a révolutionné nos processus dès le premier jour."
+      },
+      {
+        "name": "James Harrison",
+        "role": "Directeur des opérations, GlobalSupply Ltd.",
+        "text": "La meilleure décision ERP que nous ayons prise. Le seul module chaîne d'approvisionnement de Qlass nous a permis d'économiser 30 % des coûts opérationnels dès la première année."
+      }
+    ]
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Demander une démo",
+    "subtitle": "Nos experts identifieront la meilleure solution pour vous et organiseront une session de démonstration gratuite.",
+    "name": "Nom complet",
+    "company": "Nom de l'entreprise",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "message": "Votre message",
+    "submit": "Envoyer",
+    "address": "Francfort, Allemagne",
+    "emailLabel": "info@qlass.co",
+    "phoneLabel": "+90 212 000 00 00",
+    "namePlaceholder": "Jean Dupont",
+    "companyPlaceholder": "Dupont & Associés SAS",
+    "emailPlaceholder": "jean@dupont.fr",
+    "phonePlaceholder": "+33 1 00 00 00 00",
+    "messagePlaceholder": "Parlez-nous de votre projet...",
+    "successTitle": "Message envoyé !",
+    "successMessage": "Nous vous répondrons dans les plus brefs délais.",
+    "errorMessage": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "footer": {
+    "desc": "Depuis plus de 20 ans, Qlass fournit des solutions ERP modernes aux PME, en faisant la différence grâce à des services de conseil qui soutiennent la réussite de ses partenaires.",
+    "product": "Produit",
+    "company": "Entreprise",
+    "links": {
+      "features": "Fonctionnalités",
+      "integrations": "Intégrations",
+      "pricing": "Tarifs",
+      "changelog": "Journal des modifications",
+      "about": "À propos",
+      "careers": "Carrières",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "copyright": "© 2024 Qlass Software. Tous droits réservés."
+  }
+}

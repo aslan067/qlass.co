@@ -20,7 +20,7 @@ const dmSans = DM_Sans({
   display: 'swap',
 })
 
-const locales = ['tr', 'en', 'de']
+const locales = ['tr', 'en', 'de', 'fr', 'nl']
 
 const metadataByLocale: Record<string, { title: string; description: string }> = {
   tr: {
@@ -37,6 +37,16 @@ const metadataByLocale: Record<string, { title: string; description: string }> =
     title: 'Qlass ERP – Der Smarte Weg, Ihr Unternehmen zu Steuern',
     description:
       'Moderne ERP-Software für KMU. Finanzen, Vertrieb, Beschaffung und Lieferkette auf einer Plattform.'
+  },
+  fr: {
+    title: 'Qlass ERP – La Façon Intelligente de Gérer Votre Entreprise',
+    description:
+      'Logiciel ERP moderne pour les PME. Gérez la finance, les ventes, les achats et la chaîne d\'approvisionnement sur une seule plateforme.'
+  },
+  nl: {
+    title: 'Qlass ERP – De Slimme Manier om Uw Bedrijf te Beheren',
+    description:
+      'Moderne ERP-software voor het MKB. Beheer financiën, verkoop, inkoop en toeleveringsketen op één platform.'
   }
 }
 
@@ -58,6 +68,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
         tr: '/tr',
         en: '/en',
         de: '/de',
+        fr: '/fr',
+        nl: '/nl',
         'x-default': '/tr'
       }
     },

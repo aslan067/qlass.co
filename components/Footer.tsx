@@ -76,6 +76,8 @@ export default function Footer({ locale }: { locale: string }) {
               { code: 'tr', flag: '🇹🇷' },
               { code: 'en', flag: '🇬🇧' },
               { code: 'de', flag: '🇩🇪' },
+              { code: 'fr', flag: '🇫🇷' },
+              { code: 'nl', flag: '🇳🇱' },
             ].map(l => (
               <Link key={l.code} href={`/${l.code}`}
                 className={`px-3 py-1.5 rounded-lg text-sm transition-all ${
