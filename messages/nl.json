@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "features": "Functies",
+    "howItWorks": "Hoe het werkt",
+    "integrations": "Integraties",
+    "testimonials": "Referenties",
+    "contact": "Contact",
+    "login": "Inloggen",
+    "demo": "Demo aanvragen"
+  },
+  "hero": {
+    "badge": "20+ jaar ervaring",
+    "title": "Beheer uw bedrijf",
+    "titleAccent": "op de Qlass manier",
+    "subtitle": "Een moderne, gebruiksvriendelijke ERP-oplossing voor het MKB. Beheer financiën, verkoop, toeleveringsketen en meer op één platform.",
+    "cta": "Gratis demo",
+    "ctaSecondary": "Meer informatie",
+    "stat1": "Tevreden klanten",
+    "stat2": "Landen",
+    "stat3": "Jaar ervaring",
+    "dashboard": {
+      "revenue": "Totale omzet",
+      "activeOrders": "Actieve bestellingen",
+      "suppliers": "Leveranciers",
+      "inventoryValue": "Voorraadwaarde",
+      "thisMonth": "deze maand",
+      "revenueChart": "Omzetgrafiek",
+      "last12Months": "Afgelopen 12 maanden",
+      "modules": "Modules",
+      "finance": "Financiën",
+      "sales": "Verkoop",
+      "procurement": "Inkoop"
+    }
+  },
+  "features": {
+    "badge": "Onze diensten",
+    "title": "Wij Zetten Informatie Om in Bruikbare Inzichten",
+    "subtitle": "Uitgebreide ERP-modules die uw bedrijfsprocessen optimaliseren, de efficiëntie verhogen en concurrentievoordeel bieden.",
+    "items": {
+      "finance": {
+        "title": "Financiën",
+        "desc": "Vereenvoudig de boekhouding en financiële afsluitprocessen, optimaliseer het kasbeheer en het financieel risicobeheer."
+      },
+      "sales": {
+        "title": "Verkoop",
+        "desc": "Maximaliseer uw omzet met order- en contractbeheer, verhoog de verkoopprestaties en ondersteun uw team."
+      },
+      "procurement": {
+        "title": "Sourcing & Inkoop",
+        "desc": "Stroomlijn de operationele inkoop, automatiseer sourcing en contractbeheer, centraliseer de inkoopafdeling."
+      },
+      "supplyChain": {
+        "title": "Toeleveringsketen",
+        "desc": "Geef nauwkeurige levertijden op, integreer transportbeheer en stroomlijn de magazijnoperaties."
+      },
+      "service": {
+        "title": "Servicebeheer",
+        "desc": "Lever uitzonderlijke, gepersonaliseerde service met holistische analyses en geïntegreerd servicebeheer."
+      },
+      "assets": {
+        "title": "Activabeheer",
+        "desc": "Bereik operationele uitmuntendheid door het plannen, inroosteren en uitvoeren van onderhoud met geïntegreerde processen."
+      }
+    }
+  },
+  "howItWorks": {
+    "badge": "Ons proces",
+    "title": "De Toekomst Is Rooskleuriger Als U Strategisch Voorbereid Bent",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Situatieanalyse",
+        "desc": "We analyseren uw huidige bedrijfsprocessen, behoeften en doelstellingen grondig. We identificeren gebieden die verbetering en optimalisatie vereisen."
+      },
+      {
+        "num": "02",
+        "title": "Strategisch advies",
+        "desc": "Op basis van de analyseresultaten stellen we een op maat gemaakte ERP-strategie op. We bepalen de moduleselectie en het integratieplan."
+      },
+      {
+        "num": "03",
+        "title": "Implementatie & Ondersteuning",
+        "desc": "We voeren het plan uit, trainen uw team en bieden doorlopende ondersteuning na de go-live voor een vlekkeloze bedrijfsvoering."
+      }
+    ]
+  },
+  "integrations": {
+    "badge": "Integraties",
+    "title": "Werkt Naadloos Samen met Uw Favoriete Platformen",
+    "subtitle": "Meer dan 40.000 bedrijven gebruiken Qlass geïntegreerd met hun bestaande infrastructuur.",
+    "cta": "Alle integraties bekijken"
+  },
+  "testimonials": {
+    "badge": "Klantbeoordelingen",
+    "title": "10.000+ Tevreden klanten",
+    "items": [
+      {
+        "name": "Ahmet Yılmaz",
+        "role": "CEO, TechPro Inc.",
+        "text": "Na de implementatie van Qlass ERP steeg onze operationele efficiëntie met 40%. Financiële en inkoopprocessen zijn nu veel transparanter."
+      },
+      {
+        "name": "Sarah Müller",
+        "role": "CFO, EuroTrade GmbH",
+        "text": "De integratie verliep soepel en het supportteam was altijd beschikbaar. Qlass heeft onze processen vanaf dag één revolutionair veranderd."
+      },
+      {
+        "name": "James Harrison",
+        "role": "Operationeel directeur, GlobalSupply Ltd.",
+        "text": "De beste ERP-beslissing die we ooit hebben genomen. Alleen al de toeleveringsketenmodule van Qlass bespaarde ons in het eerste jaar 30% op operationele kosten."
+      }
+    ]
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Een demo aanvragen",
+    "subtitle": "Onze experts bepalen de beste oplossing voor u en plannen een gratis demosessie in.",
+    "name": "Volledige naam",
+    "company": "Bedrijfsnaam",
+    "email": "E-mail",
+    "phone": "Telefoon",
+    "message": "Uw bericht",
+    "submit": "Versturen",
+    "address": "Frankfurt, Duitsland",
+    "emailLabel": "info@qlass.co",
+    "phoneLabel": "+90 212 000 00 00",
+    "namePlaceholder": "Jan de Vries",
+    "companyPlaceholder": "De Vries & Partners B.V.",
+    "emailPlaceholder": "jan@devries.nl",
+    "phonePlaceholder": "+31 20 000 0000",
+    "messagePlaceholder": "Vertel ons over uw project...",
+    "successTitle": "Bericht verzonden!",
+    "successMessage": "We nemen zo snel mogelijk contact met u op.",
+    "errorMessage": "Er is iets misgegaan. Probeer het opnieuw."
+  },
+  "footer": {
+    "desc": "Qlass levert al meer dan 20 jaar moderne ERP-oplossingen aan het MKB en maakt het verschil met adviesdiensten die het succes van zakenpartners ondersteunen.",
+    "product": "Product",
+    "company": "Bedrijf",
+    "links": {
+      "features": "Functies",
+      "integrations": "Integraties",
+      "pricing": "Prijzen",
+      "changelog": "Wijzigingslog",
+      "about": "Over ons",
+      "careers": "Vacatures",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "copyright": "© 2024 Qlass Software. Alle rechten voorbehouden."
+  }
+}
