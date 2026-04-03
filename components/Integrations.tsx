@@ -46,7 +46,7 @@ export default async function Integrations() {
           {integrations.map((intg, i) => (
             <div key={i}
               className="glass-card rounded-2xl p-5 flex flex-col items-center justify-center gap-3 group cursor-default aspect-square">
-              <div className="w-16 h-16 rounded-2xl flex items-center justify-center font-display font-bold text-xl transition-transform group-hover:scale-110"
+              <div className="w-20 h-20 rounded-2xl flex items-center justify-center font-display font-bold text-2xl transition-transform group-hover:scale-110"
                 style={{ background: intg.bg, color: intg.color }}>
                 {intg.letter}
               </div>
